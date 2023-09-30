@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .message {
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+        }
+
+        .digit {
+            width: 10px;
+            height: 10px;
+            background-color: rgb(96, 255, 96);
+        }
+
+        .unvisible {
+            display: none;
+        }
+
+        form {
+            position:absolute;
+            bottom:20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="message unvisible">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, at?</p>
+    </div>
+    <form action="">
+        <input type="button" value="+">
+        <div id="digit">0</div>
+        <input type="button" value="-">
+    </form>
+
+    <script src="task3.js"></script>
+</body>
+</html>
