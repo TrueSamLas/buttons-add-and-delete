@@ -5,13 +5,17 @@ for (btn of btns){
     btn.addEventListener('mouseout', unShowMessage)
 }
         
-function showMessage(){
+function showMessage(e){
     if (msg.classList.contains('unvisible')) {
-        msg.classList.remove('unvisible')
+        msg.classList.remove('unvisible');
+
+        let bounds = e.target.getBoundingClientRect();
+        msg.style.top = (bounds.top - 150) + "px";
+        msg.style.left = bounds.left + "px";
     }
 }
         
-function unShowMessage(){
+function unShowMessage(e){
     if (!msg.classList.contains('unvisible')) {
             msg.classList.add('unvisible')
     }
